@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>ToDo List</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <script src="https://kit.fontawesome.com/e5ead77097.js" crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/99145245ca.js"></script>
+<!------------------------------------------------------>
+    <div id="app">
+      <h1 class="to-do__title">ToDo List</h1>
+  
+      <form id="to-do__add_form">
+          <label class="to-do__label" for="add_field">
+              <input id="add_field" type="text" name="add" placeholder="Please add a task..."/>
+              <button type="submit">Add</button>
+          </label>
+      </form>
+  
+      <ul class="to-do__list">
+        
+      </ul>
+<!-------------------------------------------------------->
+    <footer>
+      <p>&copy Copyright TODO LIST <span id="currYear"></span></p>
+    </footer>
+
+
+    <script>
+      let year=new Date().getFullYear();
+      document.getElementById("currYear").innerHTML = year;
+    </script>
+
+    <script type="module" src="index.js"></script>
+
+
+  </body>
+</html>
